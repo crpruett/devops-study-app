@@ -8,5 +8,5 @@ idiomatic_version_file_enable_tools = ["python"]
 experimental = true
 
 [env]
-APP_REPO = 'study-app'
-GITOPS_REPO = 'study-app-gitops'
+APP_REPO = 'devops-study-app'
+GITOPS_REPO = 'devops-study-app-gitops'
