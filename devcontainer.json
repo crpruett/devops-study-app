@@ -3,7 +3,7 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "scripts/setup",
+  "postCreateCommand": "scripts/setup.sh",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
