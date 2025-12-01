@@ -12,4 +12,4 @@ APP_REPO = 'devops-study-app'
 GITOPS_REPO = 'devops-study-app-gitops'
 
 [hooks]
-enter = "bash ./scripts/setup_project.sh"
+enter = "bash ./scripts/setup_project"
