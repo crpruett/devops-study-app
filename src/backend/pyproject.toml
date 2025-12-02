@@ -7,10 +7,17 @@ authors = [
     { name = "crpruett", email = "crpruett@iu.edu" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastapi>=0.123.4",
+    "httpx>=0.28.1",
+    "uvicorn>=0.38.0",
+]
 
 [project.scripts]
-backend = "backend:main"
+study-tracker-api = "backend.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend"]
 
 [build-system]
 requires = ["hatchling"] 
