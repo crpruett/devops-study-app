@@ -1,6 +1,7 @@
 [tools]
 pre-commit = "latest"
 python = "3.13"
+ruff = "latest"
 trivy = "0.61.1"
 uv = "latest"
 
