@@ -1,6 +1,6 @@
 name: Backend Tests
 on: 
-  pull_requests
+  pull_request:
 
 jobs: 
 
