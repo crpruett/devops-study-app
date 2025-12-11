@@ -49,7 +49,7 @@ jobs:
           uv run pytest tests/ -v --cov=src/backend --cov-repot=xml --cov-fail-under=80
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@4
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: ./src/backend/coverage.xml
