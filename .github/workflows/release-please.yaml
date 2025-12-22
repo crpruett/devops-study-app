@@ -12,6 +12,8 @@ jobs:
       - uses: googleapis/release-please-action@v4
         id: release
         with:
+          # Will not trigger other workflows when using GITHUB_TOKEN
+          # token: ${{ secrets.GITHUB_TOKEN }}
           token: "${{ secrets.DEVOPS_STUDY_APP }}"
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
