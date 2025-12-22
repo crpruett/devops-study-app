@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/crpruett/devops-study-app/compare/backend-v0.1.0...backend-v0.2.0) (2025-12-22)
+
+
+### Features
+
+* **docker-push:** docker push automation ([#24](https://github.com/crpruett/devops-study-app/issues/24)) ([eeb84fe](https://github.com/crpruett/devops-study-app/commit/eeb84fef8011286dde15f0caa0d1dee1d96cc2d4))
+
 ## 0.1.0 (2025-12-22)
 
 
