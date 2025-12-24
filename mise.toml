@@ -19,3 +19,11 @@ GITOPS_REPO = 'devops-study-app-gitops'
 
 [hooks]
 enter = "bash ./scripts/setup_project"
+
+[tasks.k8s-setup-local] #everying after . is a variable name
+description = "Set up basic Kuberenetes cluser for development that builds the local images and applies them with K3D"
+run = "bash ./kubernetes/setup_cluser_local.sh"
+
+[tasks.e2e-test]
+description = "Run end-to-end tesing on Kube cluster with python"
+run = "cd./kubernetes && uv run e2e-test.py"
