@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/crpruett/devops-study-app/compare/backend-v0.2.0...backend-v0.2.1) (2025-12-26)
+
+
+### Bug Fixes
+
+* **backend:** testing gitops release flow ([#40](https://github.com/crpruett/devops-study-app/issues/40)) ([b1ef7e1](https://github.com/crpruett/devops-study-app/commit/b1ef7e187c0fa788e9e308d5ab80c813a7bf05e1))
+
 ## [0.2.0](https://github.com/crpruett/devops-study-app/compare/backend-v0.1.0...backend-v0.2.0) (2025-12-22)
 
 
