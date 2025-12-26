@@ -85,9 +85,10 @@ jobs:
     outputs:
       tag: ${{ steps.tag.outputs.TAG }}
       app: frontend
+      
   trigger_e2e:
     name: Trigger E2E Tests
-    needs: test
+    needs: e2e_test
     if: success()
     uses: ./.github/workflows/e2e-tests.yaml
 
