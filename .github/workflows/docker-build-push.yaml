@@ -85,3 +85,23 @@ jobs:
     outputs:
       tag: ${{ steps.tag.outputs.TAG }}
       app: frontend
+      
+  trigger_e2e:
+    name: Trigger E2E Tests
+    needs: e2e_test
+    if: success()
+    uses: ./.github/workflows/e2e-tests.yaml
+
+  trigger_gitops:
+    name: Trigger GitOps
+    needs: [build-and-push-backend, build-and-push-frontend]
+    # Run if either build job succeeded (the other one will be skipped based on the tag)
+    if: always() && (needs.build-and-push-backend.result == 'success' || needs.build-and-push-frontend.result == 'success')
+    uses: ./.github/workflows/update-gitops.yaml
+    with:
+      tag: ${{ needs.build-and-push-backend.outputs.tags || needs.build-and-push-frontend.outputs.tags }}
+      app: ${{ needs.build-and-push-backend.outputs.app || needs.build-and-push-frontend.outputs.app }}
+
+    secrets:
+      GITOPS_DEPLOY_KEY: ${{ secrets.GITOPS_DEPLOY_KEY }}
+      DEVOPS_STUDY_APP: ${{ secrets.DEVOPS_STUDY_APP }}
