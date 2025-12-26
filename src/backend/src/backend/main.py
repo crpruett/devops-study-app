@@ -98,7 +98,7 @@ async def read_stats():
 
 
 # Marker for CI pipeline
-
+# Marker 2
 
 def main():
     """Entry point for running the API server"""
