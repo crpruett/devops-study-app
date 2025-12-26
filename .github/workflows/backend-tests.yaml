@@ -90,7 +90,7 @@ jobs:
           severity: "CRITICAL,HIGH"
 
   trigger_e2e:
-    name:Trigger E2E Tests
+    name: Trigger E2E Tests
     needs: test
     if: success()
     uses: ./.github/workflows/e2e-tests.yaml
