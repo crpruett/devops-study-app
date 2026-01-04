@@ -1,7 +1,7 @@
 import os
 
 # Application settings
-APP_NAME = os.getenv("APP_NAME", "DevOps Study Tracker")
+APP_NAME = os.getenv("APP_NAME", "Kubernetes Metrics Board")
 
 # API Configuration
 API_HOST = os.getenv("API_HOST", "0.0.0.0")

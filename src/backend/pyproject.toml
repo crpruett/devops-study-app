@@ -1,7 +1,7 @@
 [project]
-name = "study-tracker-backend"
+name = "gin-metrics-backend"
 version = "0.2.1"
-description = "Backend API for tracking study time for DevOps Certs"
+description = "Backend API for kubernetes metrics."
 readme = "README.md"
 authors = [
     { name = "crpruett", email = "crpruett@iu.edu" }
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-study-tracker-api = "backend.main:main"
+gin-metrics-api = "backend.main:main"
 
 [tool.pytest.ini_options]
 asyncio_default_fixture_loop_scpoe = "function"

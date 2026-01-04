@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 # Create FastAPI application
 app = FastAPI(
     title=APP_NAME,
-    description="API for tracking study time for DevOps studies",
+    description="API for Kuberenetes Metrics",
 )
 
 # Configure CORS
@@ -42,7 +42,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     """Root endpoint returning API information"""
-    return {"message": "DevOps Study Tracker API"}
+    return {"message": "Kubernetes Metrics Board"}
 
 
 @app.get("/health")
